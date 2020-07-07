@@ -15,7 +15,7 @@ wmname LG3D
 exec dwall -s room &
 
 # static
-# feh --bg-scale /path/to/image.file
+# feh --bg-scale /path/to/image.file &
 ###################################
 
 
