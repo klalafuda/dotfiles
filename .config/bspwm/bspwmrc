@@ -1,0 +1,46 @@
+#! /bin/sh
+nitrogen --restore
+killall picom; (sleep 1; picom) &
+~/.config/polybar/launch.sh
+killall redshift-gtk; (redshift-gtk) &
+setxkbmap -model pc105 -layout us,ru -option grp:win_space_toggle
+killall sxhkd; sxhkd &
+wmname LG3D
+
+
+###################################
+########## Wallpapers #############
+
+# dynamic
+exec dwall -s room &
+
+# static
+# feh --bg-scale /path/to/image.file
+###################################
+
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width          0
+bspc config window_gap            10
+
+bspc config split_ratio           0.50
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+bspc config focus_follows_pointer true
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a Chromium desktop='^2'
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off
+
+# xprop | grep WM_CLASS
+bspc rule -a firefox desktop=^1 follow=no
+bspc rule -a Chromium desktop=^1 follow=no
+bspc rule -a TelegramDesktop desktop=^4 
+bspc rule -a Pcmanfm state=floating rectangle=800x600
+bspc rule -a Pavucontrol state=floating rectangle=800x600
+bspc rule -a Nitrogen state=floating rectangle=400x300
+bspc rule -a jetbrains-pycharm-community desktop=^3 follow=no # don't work
+bspc rule -a ark state=floating rectangle=800x600
