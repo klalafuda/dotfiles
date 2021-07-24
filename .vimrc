@@ -1,28 +1,10 @@
-syntax on
-
-set noerrorbells
-set tabstop=4 softtabstop=4
+set ai
+filetype plugin indent on
+set smartindent
+set autoindent
 set shiftwidth=4
 set expandtab
-set smartindent
-set nu
-set nowrap
-set smartcase
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
-
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-fugitive'
-Plug 'git@github.com:ycm-core/YouCompleteMe.git'
-Plug 'mbbill/undotree'
-
-call plug#end()
-
+set tabstop=4
+set softtabstop=4
+syntax on
+set statusline+=%F
