@@ -1,6 +1,7 @@
 dwall (dynamic wallpaper) - (https://github.com/adi1090x/dynamic-wallpaper)
 shell theme - powerlevel10k (https://github.com/romkatv/powerlevel10k)
 
+
 Install these fonts:
 1) Ubuntu Mono (https://fonts.google.com/specimen/Ubuntu+Mono)
 2) Source code pro (https://github.com/adobe-fonts/source-code-pro)
